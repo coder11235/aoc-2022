@@ -11,11 +11,11 @@ fldr = "pysolns/day{day}"
 
 os.mkdir(fldr)
 
-r = get(f"https://adventofcode.com/2022/day/{day}/input", cookies={"session": cookie})
+r = get(f"https://adventofcode.com/2022/day/{day}/input", cookies={"session": cookie}, headers={"User-Agent": "personal use fetcher by udaykalyansreenivasa@gmail.com, https://github.com/coder11235/aoc-2022/blob/main/setupday.py"})
 
 fl = open(f"{fldr}/input.txt", "w")
 fl.write(r.text)
 
-open(f"{fldr}/day1.py", "w")
-open(f"{fldr}/day2.py", "w")
+# one file solutions for the first few days
+open(f"{fldr}/soln.py", "w")
 open(f"{fldr}/sample.txt", "w")

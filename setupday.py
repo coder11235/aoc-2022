@@ -7,7 +7,7 @@ day = sys.argv[1]
 
 cookie = json.loads(open("secrets.json").read())["cookie"]
 
-fldr = "pysolns/day{day}"
+fldr = f"pysolns/day{day}"
 
 os.mkdir(fldr)
 

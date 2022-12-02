@@ -26,18 +26,12 @@ def soln2():
         l = arr1.index(l)
         throw = None
         if r == "X":
-            if l == 0:
-                throw = 2
-            else:
-                throw = l - 1
+            throw = (l + 2)%3 # (3 + l -1)
         elif r == "Y":
             throw = l
             point_r = 3
         else:
-            if l == 2:
-                throw = 0
-            else:
-                throw = l + 1
+            throw = (l + 1)%3
             point_r = 6
         point_r += throw + 1
         points += point_r

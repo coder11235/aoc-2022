@@ -3,7 +3,7 @@ data = open("input.txt").read()
 x_reg = 1
 cycle_num = 0
 
-crt = [['.' for _ in range(40)] for _ in range(6)]
+crt = [[' ' for _ in range(40)] for _ in range(6)]
 
 def print_crt():
     for row in crt:
